@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Réserver une table · Kama Délice Restaurant</title>
+  <meta name="description" content="Réservez votre table chez Kama Délice Restaurant à Abomey-Calavi : remplissez le formulaire et confirmez directement sur WhatsApp.">
+  <meta name="theme-color" content="#1E1B18">
+  <meta property="og:title" content="Kama Délice Restaurant — Parce que nous vous servons par amour…">
+  <meta property="og:description" content="Cuisine fusion & gourmande à Abomey-Calavi. Réservez votre table sur WhatsApp.">
+  <meta property="og:type" content="restaurant">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  </head>
+<body>
+  <a class="skip" href="#main">Aller au contenu</a>
+
+  <!-- ============ HEADER ============ -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="index.html" class="brand" aria-label="Kama Délice Restaurant, accueil">
+        <span class="brand__mark" aria-hidden="true">K</span>
+        <span class="brand__text">Kama Délice<small>Restaurant</small></span>
+      </a>
+
+      <nav class="nav" id="nav" aria-label="Navigation principale">
+        <ul class="nav__list">
+          <li><a href="a-propos.html" class="nav__link">À propos</a></li>
+          <li><a href="index.html#cadre" class="nav__link">Le Cadre</a></li>
+          <li><a href="menu.html" class="nav__link">Menu</a></li>
+          <li><a href="index.html#cuisines" class="nav__link">Cuisines</a></li>
+          <li><a href="reservation.html" class="nav__link is-active" aria-current="page">Réservation</a></li>
+          <li><a href="index.html#contact" class="nav__link">Contact</a></li>
+        </ul>
+        <a href="#form-reservation" class="btn btn--gold nav__cta">Réserver une table</a>
+      </nav>
+
+      <a href="commander.html" class="cart-icon cart-btn" aria-label="Mon panier">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 7h12l-1 13H7L6 7Z"/><path d="M9 7V6a3 3 0 0 1 6 0v1"/></svg>
+        <span class="cart-badge" hidden>0</span>
+      </a>
+
+      <button class="burger" id="burger" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="nav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ============ RÉSERVATION ============ -->
+    <section class="section section--green page-resa" id="reservation">
+      <div class="container reservation">
+        <div class="reservation__intro reveal">
+          <a href="index.html" class="back">← Retour à l'accueil</a>
+          <p class="eyebrow">Réservation</p>
+          <h1 class="section__title">Votre table vous attend</h1>
+          <p>Remplissez ces quelques champs : votre demande s'ouvre directement dans WhatsApp, prête à être envoyée à notre équipe. Confirmation rapide, sans attente au téléphone.</p>
+          <ul class="checks">
+            <li>Terrasse, salle climatisée ou vue jardin</li>
+            <li>Groupes, anniversaires & repas d'affaires</li>
+            <li>Réponse directe de l'équipe Kama Délice</li>
+          </ul>
+        </div>
+
+        <form class="form reveal" id="form-reservation" novalidate>
+          <h3 class="form__title">
+            <span class="form__title-ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 2v3M16 2v3M3.5 9h17M5 4.5h14A1.5 1.5 0 0 1 20.5 6v13a1.5 1.5 0 0 1-1.5 1.5H5A1.5 1.5 0 0 1 3.5 19V6A1.5 1.5 0 0 1 5 4.5Z"/><path d="m9 15 2 2 4-4"/></svg></span>
+            Formulaire de réservation
+          </h3>
+
+          <div class="alert" role="note">
+            <p class="alert__title"><span class="alert__dot" aria-hidden="true"></span>Réservation via WhatsApp</p>
+            <p>Après avoir soumis le formulaire, vous serez redirigé vers WhatsApp pour confirmer votre réservation avec notre équipe.</p>
+          </div>
+
+          <div class="field">
+            <label for="nom">Nom complet <abbr title="obligatoire">*</abbr></label>
+            <input type="text" id="nom" name="nom" autocomplete="name" required placeholder="Ex. Aïcha Dossou">
+          </div>
+
+          <div class="field">
+            <label for="telephone">Téléphone <abbr title="obligatoire">*</abbr></label>
+            <input type="tel" id="telephone" name="telephone" autocomplete="tel" inputmode="tel" required
+                   placeholder="01 00 00 00 00" pattern="^(\+?229[\s.\-]?)?01([\s.\-]?\d{2}){4}$"
+                   title="Numéro béninois à 10 chiffres commençant par 01, ex. 01 00 00 00 00">
+          </div>
+
+          <div class="field">
+            <label for="email">Email <abbr title="obligatoire">*</abbr></label>
+            <input type="email" id="email" name="email" autocomplete="email" required placeholder="vous@exemple.com">
+          </div>
+
+          <div class="form__row">
+            <div class="field">
+              <label for="date">Date <abbr title="obligatoire">*</abbr></label>
+              <div class="input-ico">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 2v3M16 2v3M3.5 9h17M5 4.5h14A1.5 1.5 0 0 1 20.5 6v13a1.5 1.5 0 0 1-1.5 1.5H5A1.5 1.5 0 0 1 3.5 19V6A1.5 1.5 0 0 1 5 4.5Z"/></svg>
+                <input type="date" id="date" name="date" required>
+              </div>
+            </div>
+            <div class="field">
+              <label for="heure">Heure <abbr title="obligatoire">*</abbr></label>
+              <div class="input-ico">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/></svg>
+                <input type="time" id="heure" name="heure" required min="11:00" max="22:00" step="900" value="19:30">
+              </div>
+            </div>
+          </div>
+          <p class="form__hint">De 11h00 à 22h00 · Dimanche jusqu'à 21h00</p>
+
+          <div class="field">
+            <label for="personnes">Nombre de personnes <abbr title="obligatoire">*</abbr></label>
+            <select id="personnes" name="personnes" required>
+              <option value="1 personne">1 personne</option>
+              <option value="2 personnes" selected>2 personnes</option>
+              <option value="3 personnes">3 personnes</option>
+              <option value="4 personnes">4 personnes</option>
+              <option value="5 personnes">5 personnes</option>
+              <option value="6 personnes">6 personnes</option>
+              <option value="7 personnes">7 personnes</option>
+              <option value="8 personnes">8 personnes</option>
+              <option value="9 personnes">9 personnes</option>
+              <option value="10 personnes">10 personnes</option>
+              <option value="Plus de 10 personnes (groupe)">Plus de 10 personnes (groupe)</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="demandes">Demandes spéciales</label>
+            <textarea id="demandes" name="demandes" rows="3" placeholder="Allergies, occasion spéciale, préférences de placement..."></textarea>
+          </div>
+
+          <p class="form__error" id="form-error" role="alert" hidden></p>
+
+          <button type="submit" class="btn btn--submit btn--lg btn--block">
+            <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.3-.4.7-1.4.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 0 0 1.8-1.3 2.2 2.2 0 0 0 .2-1.3c-.1-.1-.3-.2-.5-.3Z"/></svg>
+            Réserver via WhatsApp
+          </button>
+          <p class="form__legal"><abbr title="obligatoire">*</abbr> Champs obligatoires</p>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div>
+        <a href="index.html" class="brand brand--footer"><span class="brand__mark" aria-hidden="true">K</span><span class="brand__text">Kama Délice<small>Restaurant</small></span></a>
+        <p class="footer__slogan">Parce que nous vous servons par amour…</p>
+      </div>
+      <nav aria-label="Liens de pied de page">
+        <ul class="footer__links">
+          <li><a href="a-propos.html">À propos</a></li>
+          <li><a href="index.html#cadre">Le Cadre</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="reservation.html">Réservation</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+    <p class="footer__copy container">© <span id="year">2026</span> Kama Délice Restaurant · Abomey-Calavi, Bénin</p>
+  </footer>
+
+  <script src="assets/js/main.js" defer></script>
+  <script src="assets/js/cart.js" defer></script>
+</body>
+</html>

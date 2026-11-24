@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mon panier · Kama Délice Restaurant</title>
+  <meta name="description" content="Commandez en ligne chez Kama Délice Restaurant : livraison à Calavi et Cotonou ou à emporter, validation sur WhatsApp.">
+  <meta name="theme-color" content="#1E1B18">
+  <meta property="og:title" content="Kama Délice Restaurant — Parce que nous vous servons par amour…">
+  <meta property="og:description" content="Cuisine fusion & gourmande à Abomey-Calavi. Réservez votre table sur WhatsApp.">
+  <meta property="og:type" content="restaurant">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  </head>
+<body>
+  <a class="skip" href="#main">Aller au contenu</a>
+
+  <!-- ============ HEADER ============ -->
+  <header class="header header--solid" id="header">
+    <div class="container header__inner">
+      <a href="index.html" class="brand" aria-label="Kama Délice Restaurant, accueil">
+        <span class="brand__mark" aria-hidden="true">K</span>
+        <span class="brand__text">Kama Délice<small>Restaurant</small></span>
+      </a>
+
+      <nav class="nav" id="nav" aria-label="Navigation principale">
+        <ul class="nav__list">
+          <li><a href="a-propos.html" class="nav__link">À propos</a></li>
+          <li><a href="index.html#cadre" class="nav__link">Le Cadre</a></li>
+          <li><a href="menu.html" class="nav__link">Menu</a></li>
+          <li><a href="index.html#cuisines" class="nav__link">Cuisines</a></li>
+          <li><a href="reservation.html" class="nav__link">Réservation</a></li>
+          <li><a href="index.html#contact" class="nav__link">Contact</a></li>
+        </ul>
+        <a href="reservation.html" class="btn btn--gold nav__cta js-reserve">Réserver une table</a>
+      </nav>
+
+      <a href="commander.html" class="cart-icon cart-btn is-active" aria-label="Mon panier" aria-current="page">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 7h12l-1 13H7L6 7Z"/><path d="M9 7V6a3 3 0 0 1 6 0v1"/></svg>
+        <span class="cart-badge" hidden>0</span>
+      </a>
+
+      <button class="burger" id="burger" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="nav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main" class="page-order">
+    <div class="container">
+      <header class="order__head">
+        <a href="menu.html" class="back back--dark">← Continuer mes achats</a>
+        <p class="eyebrow eyebrow--brown">Commande en ligne</p>
+        <h1 class="order__title">Mon panier</h1>
+      </header>
+
+      <div class="order__grid">
+        <!-- ============ COLONNE GAUCHE : PANIER + LIVRAISON ============ -->
+        <div class="order__main">
+          <section class="card" aria-labelledby="cart-title">
+            <div class="card__head">
+              <h2 class="card__title" id="cart-title">Votre panier</h2>
+              <button type="button" class="link-btn" id="cart-clear" hidden>Vider le panier</button>
+            </div>
+
+            <div class="cart-empty" id="cart-empty">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l-1.2 12.1a1 1 0 0 1-1 .9H7.2a1 1 0 0 1-1-.9L5 8Z"/><path d="M9 8V6.5a3 3 0 0 1 6 0V8"/></svg>
+              <p class="cart-empty__title">Votre panier est vide</p>
+              <p class="cart-empty__text">Commencez à ajouter des plats depuis notre menu.</p>
+              <a href="menu.html" class="btn btn--gold">Voir le menu</a>
+            </div>
+
+            <ul class="cart-list" id="cart-list" aria-live="polite"></ul>
+
+            <div class="cart-done" id="cart-done" hidden>
+              <span class="cart-done__ico" aria-hidden="true">✓</span>
+              <p class="cart-empty__title">Commande prête à l'envoi !</p>
+              <p class="cart-empty__text">Envoyez le message dans WhatsApp pour transmettre votre commande. L'équipe Kama Délice vous confirmera la prise en charge et le tarif de livraison.</p>
+              <a href="#" class="btn btn--submit" id="cart-done-link" target="_blank" rel="noopener">Rouvrir WhatsApp</a>
+            </div>
+          </section>
+
+          <form class="card form-order" id="form-commande" novalidate hidden>
+            <h2 class="card__title">Informations de livraison</h2>
+
+            <fieldset class="modes">
+              <legend class="sr-only">Mode de livraison</legend>
+              <label class="mode">
+                <input type="radio" name="livraison-mode" value="Livraison à domicile" checked>
+                <span class="mode__box"><span class="mode__ico" aria-hidden="true">🛵</span><span><strong>Livraison à domicile</strong><small>Calavi &amp; Cotonou</small></span></span>
+              </label>
+              <label class="mode">
+                <input type="radio" name="livraison-mode" value="À emporter">
+                <span class="mode__box"><span class="mode__ico" aria-hidden="true">🛍️</span><span><strong>À emporter</strong><small>Retrait au restaurant</small></span></span>
+              </label>
+            </fieldset>
+
+            <div class="field">
+              <label for="livraison-nom">Nom complet <abbr title="obligatoire">*</abbr></label>
+              <input type="text" id="livraison-nom" autocomplete="name" required placeholder="Ex. Aïcha Dossou">
+            </div>
+
+            <div class="field">
+              <label for="livraison-tel">Numéro WhatsApp <abbr title="obligatoire">*</abbr></label>
+              <input type="tel" id="livraison-tel" autocomplete="tel" inputmode="tel" required
+                     placeholder="01 00 00 00 00" pattern="^(\+?229[\s.\-]?)?01([\s.\-]?\d{2}){4}$"
+                     title="Numéro béninois à 10 chiffres commençant par 01, ex. 01 00 00 00 00">
+            </div>
+
+            <div class="field" id="adresse-field">
+              <label for="livraison-adresse">Adresse de livraison précise <abbr title="obligatoire">*</abbr></label>
+              <textarea id="livraison-adresse" rows="3" required placeholder="Quartier, rue, repères (ex. Calavi Zoca, derrière la pharmacie, portail bleu)"></textarea>
+            </div>
+
+            <p class="pickup" id="pickup-info" hidden>
+              📍 Retrait au restaurant : 400 m du Carrefour Calavi-Kpota, voie d'Aïtchédji (4ème VON à gauche).
+            </p>
+          </form>
+        </div>
+
+        <!-- ============ COLONNE DROITE : RÉSUMÉ ============ -->
+        <aside class="order__side" aria-labelledby="summary-title">
+          <div class="card summary">
+            <h2 class="card__title" id="summary-title">Résumé de la commande</h2>
+            <dl class="summary__lines">
+              <div><dt>Articles</dt><dd id="sum-count">0</dd></div>
+              <div><dt>Sous-total</dt><dd id="sum-subtotal">0 FCFA</dd></div>
+              <div><dt>Livraison</dt><dd class="summary__muted" id="sum-delivery">À définir</dd></div>
+              <div class="summary__total"><dt>Total</dt><dd id="sum-total">0 FCFA</dd></div>
+            </dl>
+            <p class="summary__variable" id="sum-variable" hidden>* Certains plats ont un prix variable (selon la protéine ou le poulet choisi) : le montant final vous sera confirmé.</p>
+            <p class="summary__note">🟢 <strong>Livraison :</strong> prix à définir selon votre quartier à Calavi/Cotonou par le livreur.</p>
+            <p class="form__error" id="order-error" role="alert" hidden></p>
+            <button type="submit" form="form-commande" class="btn btn--submit btn--lg btn--block" id="btn-commander" disabled>
+              <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.3-.4.7-1.4.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 0 0 1.8-1.3 2.2 2.2 0 0 0 .2-1.3c-.1-.1-.3-.2-.5-.3Z"/></svg>
+              Valider et commander via WhatsApp
+            </button>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div>
+        <a href="index.html" class="brand brand--footer"><span class="brand__mark" aria-hidden="true">K</span><span class="brand__text">Kama Délice<small>Restaurant</small></span></a>
+        <p class="footer__slogan">Parce que nous vous servons par amour…</p>
+      </div>
+      <nav aria-label="Liens de pied de page">
+        <ul class="footer__links">
+          <li><a href="a-propos.html">À propos</a></li>
+          <li><a href="index.html#cadre">Le Cadre</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="reservation.html">Réservation</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+    <p class="footer__copy container">© <span id="year">2026</span> Kama Délice Restaurant · Abomey-Calavi, Bénin</p>
+  </footer>
+
+  <script src="assets/js/main.js" defer></script>
+  <script src="assets/js/cart.js" defer></script>
+</body>
+</html>

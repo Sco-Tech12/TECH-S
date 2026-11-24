@@ -1,0 +1,302 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Menu · Kama Délice Restaurant</title>
+  <meta name="description" content="Menu officiel de Kama Délice Restaurant à Abomey-Calavi : petit-déjeuner, plats signatures, pizzas au feu de bois, fast-food, plats traditionnels béninois, desserts et boissons. Formule Hebdo du mardi au vendredi, dessert offert.">
+  <meta name="theme-color" content="#1E1B18">
+  <meta property="og:title" content="Kama Délice Restaurant — Parce que nous vous servons par amour…">
+  <meta property="og:description" content="Cuisine fusion & gourmande à Abomey-Calavi. Réservez votre table sur WhatsApp.">
+  <meta property="og:type" content="restaurant">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  </head>
+<body>
+  <a class="skip" href="#main">Aller au contenu</a>
+
+  <!-- ============ HEADER ============ -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="index.html" class="brand" aria-label="Kama Délice Restaurant, accueil">
+        <span class="brand__mark" aria-hidden="true">K</span>
+        <span class="brand__text">Kama Délice<small>Restaurant</small></span>
+      </a>
+
+      <nav class="nav" id="nav" aria-label="Navigation principale">
+        <ul class="nav__list">
+          <li><a href="a-propos.html" class="nav__link">À propos</a></li>
+          <li><a href="index.html#cadre" class="nav__link">Le Cadre</a></li>
+          <li><a href="menu.html" class="nav__link is-active" aria-current="page">Menu</a></li>
+          <li><a href="index.html#cuisines" class="nav__link">Cuisines</a></li>
+          <li><a href="reservation.html" class="nav__link">Réservation</a></li>
+          <li><a href="index.html#contact" class="nav__link">Contact</a></li>
+        </ul>
+        <a href="reservation.html" class="btn btn--gold nav__cta js-reserve">Réserver une table</a>
+      </nav>
+
+      <a href="commander.html" class="cart-icon cart-btn" aria-label="Mon panier">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 7h12l-1 13H7L6 7Z"/><path d="M9 7V6a3 3 0 0 1 6 0v1"/></svg>
+        <span class="cart-badge" hidden>0</span>
+      </a>
+
+      <button class="burger" id="burger" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="nav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main" class="page-carte">
+    <!-- ============ EN-TÊTE DE PAGE ============ -->
+    <section class="page-hero">
+      <div class="container">
+        <a href="index.html" class="back">← Retour à l'accueil</a>
+        <p class="eyebrow">La Carte</p>
+        <h1 class="page-hero__title">Menu officiel</h1>
+        <p class="page-hero__lead">Cuisine fusion &amp; gourmande : spécialités africaines, française, philippine, pizzeria, fast-food et salon de thé.</p>
+      </div>
+    </section>
+
+    <!-- ============ FORMULE HEBDO ============ -->
+    <div class="container">
+      <aside class="hebdo reveal" aria-label="Formule de la semaine">
+        <span class="hebdo__badge">📢 Formule Hebdo</span>
+        <div class="hebdo__body">
+          <h2 class="hebdo__title">Menus du jour, du mardi au vendredi</h2>
+          <p>Un menu différent chaque jour, avec <strong>le dessert offert</strong>. Parfait pour votre pause déjeuner entre collègues ou vos repas d'affaires.</p>
+        </div>
+        <div class="hebdo__actions">
+          <a href="reservation.html" class="btn btn--brown">Réserver pour midi</a>
+          <a href="https://wa.me/2290100000000" class="hebdo__link js-whatsapp" data-message="Bonjour Kama Délice 👋, quel est le menu du jour aujourd'hui ? Merci !" target="_blank" rel="noopener">Demander le menu du jour →</a>
+        </div>
+      </aside>
+    </div>
+
+    <!-- ============ CATÉGORIES ============ -->
+    <nav class="cat-nav" aria-label="Catégories du menu">
+      <div class="container">
+        <ul class="cat-nav__list">
+          <li><a href="#petit-dejeuner" class="cat-nav__link">🥐 Petit-déjeuner</a></li>
+          <li><a href="#entrees" class="cat-nav__link">🥗 Entrées</a></li>
+          <li><a href="#signatures" class="cat-nav__link">🥩 Signatures</a></li>
+          <li><a href="#pizzas" class="cat-nav__link">🍕 Pizzas</a></li>
+          <li><a href="#fast-food" class="cat-nav__link">🍔 Fast-food</a></li>
+          <li><a href="#traditionnels" class="cat-nav__link">🍲 Traditionnels</a></li>
+          <li><a href="#desserts" class="cat-nav__link">🍧 Desserts</a></li>
+          <li><a href="#boissons" class="cat-nav__link">🍹 Boissons</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container carte">
+      <section class="carte__cat reveal" id="petit-dejeuner">
+        <header class="carte__head">
+          <span class="carte__ico" aria-hidden="true">🥐</span>
+          <h2>Petit-déjeuner</h2>
+          <p class="carte__note">Dès 07h00</p>
+        </header>
+        <ul class="carte__list">
+          <li class="item">
+            <div class="item__top"><h3>Formule Kpota Express</h3><span class="item__dots" aria-hidden="true"></span><span class="item__price">1 500 FCFA</span></div>
+            <p>Café ou thé, pain chaud, beurre et confiture locale</p>
+            <button type="button" class="add-btn" data-add data-id="formule-kpota-express" data-categorie="Petit-déjeuner" data-nom="Formule Kpota Express" data-prix="1500" data-image="☕" aria-label="Ajouter Formule Kpota Express au panier"><span aria-hidden="true">+</span> Ajouter</button>
+          </li>
+          <li class="item">
+            <div class="item__top"><h3>Le Continental</h3><span class="item__dots" aria-hidden="true"></span><span class="item__price">3 000 FCFA</span></div>
+            <p>Boisson chaude, jus de fruits frais maison, omelette garnie, croissants</p>
+            <button type="button" class="add-btn" data-add data-id="le-continental" data-categorie="Petit-déjeuner" data-nom="Le Continental" data-prix="3000" data-image="🥐" aria-label="Ajouter Le Continental au panier"><span aria-hidden="true">+</span> Ajouter</button>
+          </li>
+        </ul>
+      </section>
+
+      <section class="carte__cat reveal" id="entrees">
+        <header class="carte__head">
+          <span class="carte__ico" aria-hidden="true">🥗</span>
+          <h2>Entrées &amp; salades</h2>
+        </header>
+        <ul class="carte__list">
+          <li class="item">
+            <div class="item__top"><h3>Salade César du Chef</h3><span class="item__dots" aria-hidden="true"></span><span class="item__price">2 500 FCFA</span></div>
+            <p>Blanc de poulet émincé croustillant, laitue, croûtons, sauce césar maison</p>
+            <button type="button" class="add-btn" data-add data-id="salade-cesar-du-chef" data-categorie="Entrée & salade" data-nom="Salade César du Chef" data-prix="2500" data-image="🥗" aria-label="Ajouter Salade César du Chef au panier"><span aria-hidden="true">+</span> Ajouter</button>
+          </li>
+          <li class="item">
+            <div class="item__top"><h3>Salade Composée « Kama »</h3><span class="item__dots" aria-hidden="true"></span><span class="item__price">2 000 FCFA</span></div>
+            <p>Mix fraîcheur de crudités, œuf, thon, maïs et vinaigrette spéciale</p>
+            <button type="button" class="add-btn" data-add data-id="salade-composee-kama" data-categorie="Entrée & salade" data-nom="Salade Composée « Kama »" data-prix="2000" data-image="🥙" aria-label="Ajouter Salade Composée « Kama » au panier"><span aria-hidden="true">+</span> Ajouter</button>
+          </li>
+        </ul>
+      </section>
+
+      <section class="carte__cat reveal" id="signatures">
+        <header class="carte__head">
+          <span class="carte__ico" aria-hidden="true">🥩</span>
+          <h2>Plats signatures</h2>
+          <p class="carte__note">Cuisine fusion</p>
+        </header>
+        <ul class="carte__list">
+          <li class="item">
+            <div class="item__top"><h3>Poisson Braisé au Beurre de Mangue <span class="badge">Signature</span></h3><span class="item__dots" aria-hidden="true"></span><span class="item__price">5 500 FCFA</span></div>
+            <p>Grand poisson frais mariné, sauce onctueuse mangue-beurre, escorté d'alloco ou de riz</p>
+            <button type="button" class="add-btn" data-add data-id="poisson-braise-au-beurre-de-mangue" data-categorie="Plat signature" data-nom="Poisson Braisé au Beurre de Mangue" data-prix="5500" data-image="🐟" aria-label="Ajouter Poisson Braisé au Beurre de Mangue au panier"><span aria-hidden="true">+</span> Ajouter</button>
+          </li>
+          <li class="item">
+            <div class="item__top"><h3>Poulet Yassa Traditionnel</h3><span class="item__dots" aria-hidden="true"></span><span class="item__price">4 500 FCFA</span></div>
+            <p>Cuisse de poulet caramélisée aux oignons, moutarde et citron, servie avec du riz blanc</p>
+            <button type="button" class="add-btn" data-add data-id="poulet-yassa-traditionnel" data-categorie="Plat signature" data-nom="Poulet Yassa Traditionnel" data-prix="4500" data-image="🍗" aria-label="Ajouter Poulet Yassa Traditionnel au panier"><span aria-hidden="true">+</span> Ajouter</button>
+          </li>
+          <li class="item">
+            <div class="item__top"><h3>Pancit Philippin original</h3><span class="item__dots" aria-hidden="true"></span><span class="item__price">4 000 FCFA</span></div>
+            <p>Nouilles asiatiques sautées aux petits légumes croquants, crevettes et émincé de poulet</p>
+            <button type="button" class="add-btn" data-add data-id="pancit-philippin-original" data-categorie="Plat signature" data-nom="Pancit Philippin original" data-prix="4000" data-image="🍜" aria-label="Ajouter Pancit Philippin original au panier"><span aria-hidden="true">+</span> Ajouter</button>
+          </li>
+          <li class="item">
+            <div class="item__top"><h3>Filet de Bœuf façon Kama</h3><span class="item__dots" aria-hidden="true"></span><span class="item__price">5 000 FCFA</span></div>
+            <p>Pièce de viande tendre saisie, sauce au poivre vert ou champignons, frites maison</p>
+            <button type="button" class="add-btn" data-add data-id="filet-de-boeuf-facon-kama" data-categorie="Plat signature" data-nom="Filet de Bœuf façon Kama" data-prix="5000" data-image="🥩" aria-label="Ajouter Filet de Bœuf façon Kama au panier"><span aria-hidden="true">+</span> Ajouter</button>
+          </li>
+        </ul>
+      </section>
+
+      <section class="carte__cat reveal" id="pizzas">
+        <header class="carte__head">
+          <span class="carte__ico" aria-hidden="true">🍕</span>
+          <h2>Pizzas au feu de bois</h2>
+        </header>
+        <ul class="carte__list">
+          <li class="item">
+            <div class="item__top"><h3>Pizza Reine</h3><span class="item__dots" aria-hidden="true"></span><span class="item__price">4 000 FCFA</span></div>
+            <p>Base tomate, mozzarella fondante, jambon, champignons frais</p>
+            <button type="button" class="add-btn" data-add data-id="pizza-reine" data-categorie="Pizza au feu de bois" data-nom="Pizza Reine" data-prix="4000" data-image="🍕" aria-label="Ajouter Pizza Reine au panier"><span aria-hidden="true">+</span> Ajouter</button>
+          </li>
+          <li class="item">
+            <div class="item__top"><h3>Pizza Margherita</h3><span class="item__dots" aria-hidden="true"></span><span class="item__price">3 000 FCFA</span></div>
+            <p>Base tomate, double mozzarella, origan, filet d'huile d'olive</p>
+            <button type="button" class="add-btn" data-add data-id="pizza-margherita" data-categorie="Pizza au feu de bois" data-nom="Pizza Margherita" data-prix="3000" data-image="🍕" aria-label="Ajouter Pizza Margherita au panier"><span aria-hidden="true">+</span> Ajouter</button>
+          </li>
+          <li class="item">
+            <div class="item__top"><h3>Pizza KAMA DÉLICE <span class="badge">La Spéciale</span></h3><span class="item__dots" aria-hidden="true"></span><span class="item__price">5 500 FCFA</span></div>
+            <p>Recette secrète du chef garnie de viandes marinées, poivrons et crème</p>
+            <button type="button" class="add-btn" data-add data-id="pizza-kama-delice" data-categorie="Pizza au feu de bois" data-nom="Pizza KAMA DÉLICE" data-prix="5500" data-image="🍕" aria-label="Ajouter Pizza KAMA DÉLICE au panier"><span aria-hidden="true">+</span> Ajouter</button>
+          </li>
+        </ul>
+      </section>
+
+      <section class="carte__cat reveal" id="fast-food">
+        <header class="carte__head">
+          <span class="carte__ico" aria-hidden="true">🍔</span>
+          <h2>Coin fast-food &amp; snacks</h2>
+        </header>
+        <ul class="carte__list">
+          <li class="item">
+            <div class="item__top"><h3>Royal Burger Kama</h3><span class="item__dots" aria-hidden="true"></span><span class="item__price">3 000 FCFA</span></div>
+            <p>Pain artisanal brioché, steak de bœuf juteux, fromage, sauce maison, servi avec frites</p>
+            <button type="button" class="add-btn" data-add data-id="royal-burger-kama" data-categorie="Fast-food & snacks" data-nom="Royal Burger Kama" data-prix="3000" data-image="🍔" aria-label="Ajouter Royal Burger Kama au panier"><span aria-hidden="true">+</span> Ajouter</button>
+          </li>
+          <li class="item">
+            <div class="item__top"><h3>Chawarma Géant</h3><span class="item__dots" aria-hidden="true"></span><span class="item__price">2 000 FCFA</span></div>
+            <p>Viande ou poulet. Galette roulée, viande bien épicée, sauce blanche</p>
+            <button type="button" class="add-btn" data-add data-id="chawarma-geant" data-categorie="Fast-food & snacks" data-nom="Chawarma Géant" data-prix="2000" data-image="🌯" aria-label="Ajouter Chawarma Géant au panier"><span aria-hidden="true">+</span> Ajouter</button>
+          </li>
+        </ul>
+      </section>
+
+      <section class="carte__cat reveal" id="traditionnels">
+        <header class="carte__head">
+          <span class="carte__ico" aria-hidden="true">🍲</span>
+          <h2>Sauces &amp; plats traditionnels</h2>
+          <p class="carte__note">Selon arrivage journalier</p>
+        </header>
+        <ul class="carte__list">
+          <li class="item">
+            <div class="item__top"><h3>Riz au Poisson Braisé <span class="badge badge--soft">Favori des habitués</span></h3><span class="item__dots" aria-hidden="true"></span><span class="item__price">3 500 FCFA</span></div>
+            <button type="button" class="add-btn" data-add data-id="riz-au-poisson-braise" data-categorie="Plat traditionnel" data-nom="Riz au Poisson Braisé" data-prix="3500" data-image="🍛" aria-label="Ajouter Riz au Poisson Braisé au panier"><span aria-hidden="true">+</span> Ajouter</button>
+          </li>
+          <li class="item">
+            <div class="item__top"><h3>Kedjenou ou Sauté de Poulet entier</h3><span class="item__dots" aria-hidden="true"></span><span class="item__price"><small>Dès</small> 5 000 FCFA</span></div>
+            <p>Poulet chair ou pondeuse</p>
+            <button type="button" class="add-btn" data-add data-id="kedjenou-ou-saute-de-poulet-entier" data-categorie="Plat traditionnel" data-nom="Kedjenou ou Sauté de Poulet entier" data-prix="5000" data-image="🍲" data-variable="1" aria-label="Ajouter Kedjenou ou Sauté de Poulet entier au panier"><span aria-hidden="true">+</span> Ajouter</button>
+          </li>
+          <li class="item">
+            <div class="item__top"><h3>Sauces du jour béninoises</h3><span class="item__dots" aria-hidden="true"></span><span class="item__price">3 000 – 5 000 FCFA</span></div>
+            <p>Graine, Gouagouassou, Djoumgblé, accompagnées de foutou ou de riz. Prix selon la protéine : biche, agouti, poisson fumé</p>
+            <button type="button" class="add-btn" data-add data-id="sauces-du-jour-beninoises" data-categorie="Plat traditionnel" data-nom="Sauces du jour béninoises" data-prix="3000" data-image="🥘" data-variable="1" aria-label="Ajouter Sauces du jour béninoises au panier"><span aria-hidden="true">+</span> Ajouter</button>
+          </li>
+        </ul>
+      </section>
+
+      <section class="carte__cat reveal" id="desserts">
+        <header class="carte__head">
+          <span class="carte__ico" aria-hidden="true">🍧</span>
+          <h2>Desserts &amp; salon de thé</h2>
+        </header>
+        <ul class="carte__list">
+          <li class="item">
+            <div class="item__top"><h3>Fondant au Chocolat cœur coulant</h3><span class="item__dots" aria-hidden="true"></span><span class="item__price">2 000 FCFA</span></div>
+            <p>Accompagné d'une boule de glace vanille</p>
+            <button type="button" class="add-btn" data-add data-id="fondant-au-chocolat-coeur-coulant" data-categorie="Dessert & salon de thé" data-nom="Fondant au Chocolat cœur coulant" data-prix="2000" data-image="🍫" aria-label="Ajouter Fondant au Chocolat cœur coulant au panier"><span aria-hidden="true">+</span> Ajouter</button>
+          </li>
+          <li class="item">
+            <div class="item__top"><h3>Coupes de Glaces Artisanales</h3><span class="item__dots" aria-hidden="true"></span><span class="item__price">1 500 FCFA</span></div>
+            <p>Parfums au choix à l'espace Glacier</p>
+            <button type="button" class="add-btn" data-add data-id="coupes-de-glaces-artisanales" data-categorie="Dessert & salon de thé" data-nom="Coupes de Glaces Artisanales" data-prix="1500" data-image="🍨" aria-label="Ajouter Coupes de Glaces Artisanales au panier"><span aria-hidden="true">+</span> Ajouter</button>
+          </li>
+        </ul>
+      </section>
+
+      <section class="carte__cat reveal" id="boissons">
+        <header class="carte__head">
+          <span class="carte__ico" aria-hidden="true">🍹</span>
+          <h2>Boissons &amp; refresh</h2>
+        </header>
+        <ul class="carte__list">
+          <li class="item">
+            <div class="item__top"><h3>Jus d'Ananas frais maison</h3><span class="item__dots" aria-hidden="true"></span><span class="item__price">1 000 FCFA</span></div>
+            <p>Pur jus</p>
+            <button type="button" class="add-btn" data-add data-id="jus-d-ananas-frais-maison" data-categorie="Boisson" data-nom="Jus d'Ananas frais maison" data-prix="1000" data-image="🍍" aria-label="Ajouter Jus d'Ananas frais maison au panier"><span aria-hidden="true">+</span> Ajouter</button>
+          </li>
+          <li class="item">
+            <div class="item__top"><h3>Cocktails Créatifs</h3><span class="item__dots" aria-hidden="true"></span><span class="item__price">2 500 FCFA</span></div>
+            <p>Avec ou sans alcool</p>
+            <button type="button" class="add-btn" data-add data-id="cocktails-creatifs" data-categorie="Boisson" data-nom="Cocktails Créatifs" data-prix="2500" data-image="🍹" aria-label="Ajouter Cocktails Créatifs au panier"><span aria-hidden="true">+</span> Ajouter</button>
+          </li>
+        </ul>
+      </section>
+    </div>
+
+    <!-- ============ APPEL À L'ACTION ============ -->
+    <section class="carte-cta">
+      <div class="container carte-cta__inner reveal">
+        <p class="carte-cta__slogan">« Parce que nous vous servons par amour… »</p>
+        <a href="reservation.html" class="btn btn--gold btn--lg js-reserve">Réserver une table</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div>
+        <a href="index.html" class="brand brand--footer"><span class="brand__mark" aria-hidden="true">K</span><span class="brand__text">Kama Délice<small>Restaurant</small></span></a>
+        <p class="footer__slogan">Parce que nous vous servons par amour…</p>
+      </div>
+      <nav aria-label="Liens de pied de page">
+        <ul class="footer__links">
+          <li><a href="a-propos.html">À propos</a></li>
+          <li><a href="index.html#cadre">Le Cadre</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="reservation.html">Réservation</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+    <p class="footer__copy container">© <span id="year">2026</span> Kama Délice Restaurant · Abomey-Calavi, Bénin</p>
+  </footer>
+
+  <script src="assets/js/main.js" defer></script>
+  <script src="assets/js/cart.js" defer></script>
+</body>
+</html>
