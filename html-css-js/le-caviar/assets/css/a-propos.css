@@ -1,0 +1,91 @@
+/* ==========================================================================
+   RESTAURANT LE CAVIAR — page « À propos » (a-propos.html)
+   Complète style.css : mêmes variables (--bg-dark, --accent-color, --bg-light…)
+   Photos : déposer hero.jpg, table.jpg et plat.jpg dans assets/img/a-propos/
+   (un fond anthracite s'affiche tant qu'elles manquent)
+   ========================================================================== */
+
+/* ---------- Bloc 1 : bannière ---------- */
+.about-hero {
+  position: relative; min-height: 72svh; display: flex; align-items: center; justify-content: center;
+  padding: calc(var(--header-h) + 3rem) 0 4.5rem; text-align: center; color: var(--text-light);
+  background: var(--bg-dark); overflow: hidden;
+}
+.about-hero__bg {
+  position: absolute; inset: 0;
+  background:
+    linear-gradient(rgba(18, 22, 26, .78), rgba(18, 22, 26, .88)),
+    url("../img/a-propos/hero.jpg") center / cover no-repeat,
+    radial-gradient(ellipse 70% 60% at 80% 20%, rgba(155, 17, 30, .2), transparent 60%),
+    var(--bg-dark);
+}
+.about-hero__content { position: relative; }
+.about-badge {
+  font-family: var(--font-display); font-size: .72rem; font-weight: 500; letter-spacing: .28em; text-transform: uppercase;
+  color: var(--accent-on-dark);
+}
+.about-hero__title { font-size: clamp(3rem, 13vw, 6rem); font-weight: 500; letter-spacing: -.035em; margin-top: 1.2rem; }
+.about-hero__lead { max-width: 34rem; margin: 1.1rem auto 0; color: var(--text-dim); font-size: 1.05rem; }
+
+/* ---------- Blocs 1 et 3 : deux colonnes photo / texte ---------- */
+.about-split { display: grid; gap: 2.5rem; align-items: center; }
+.about-split > * { min-width: 0; }
+.about-split__title { font-size: clamp(1.9rem, 7vw, 2.7rem); }
+.about-split__text p { color: var(--ink-muted); margin-top: 1.2rem; }
+.about-split__text .btn { margin-top: 2rem; white-space: normal; text-align: center; }
+
+.about-photo {
+  position: relative; aspect-ratio: 4 / 3; border-radius: var(--radius); overflow: hidden;
+  display: flex; align-items: flex-end; background-color: var(--bg-dark);
+}
+.about-photo--table {
+  background:
+    url("../img/a-propos/table.jpg") center / cover no-repeat,
+    radial-gradient(circle at 30% 30%, rgba(155, 17, 30, .25), transparent 55%),
+    var(--bg-dark);
+}
+.about-photo--dish {
+  background:
+    url("../img/a-propos/plat.jpg") center / cover no-repeat,
+    radial-gradient(circle at 70% 35%, rgba(155, 17, 30, .25), transparent 55%),
+    var(--bg-dark-3);
+}
+.about-photo__label {
+  position: relative; margin: 1.25rem; padding: .35rem .75rem; border-radius: 2px;
+  background: rgba(18, 22, 26, .7); color: var(--text-dim); font-size: .72rem; letter-spacing: .06em;
+}
+
+/* ---------- Bloc 2 : valeurs ---------- */
+.about-values { background: var(--surface); border-block: 1px solid var(--border-silver); }
+.about-values__head { text-align: center; margin-bottom: 3.5rem; }
+.about-values__sub { margin-top: .8rem; color: var(--ink-muted); letter-spacing: .14em; font-size: .85rem; }
+.values { display: grid; gap: 1px; background: var(--border-silver); border: 1px solid var(--border-silver); }
+.value-card { background: var(--surface); padding: 2.5rem 1.75rem; text-align: center; }
+.value-card__ico {
+  width: 40px; height: 40px; margin: 0 auto 1.4rem; fill: none; stroke: var(--accent-color); stroke-width: 1.3;
+  stroke-linecap: round; stroke-linejoin: round; display: block;
+}
+.value-card__title { font-size: 1.3rem; }
+.value-card p { margin-top: .8rem; color: var(--ink-muted); font-size: .93rem; }
+
+/* ---------- Bloc 3 : brigade ---------- */
+.about-split__text .about-brigade__sub { color: var(--accent-color); font-weight: 700; letter-spacing: .2em; text-transform: uppercase; font-size: .72rem; margin-top: .7rem; }
+.about-quote { margin-top: 1.75rem; padding: .3rem 0 .3rem 1.25rem; border-left: 2px solid var(--accent-color); }
+.about-split__text .about-quote p {
+  margin: 0; font-family: var(--font-display); font-size: 1.2rem; line-height: 1.45; color: var(--ink);
+}
+.about-tags { display: flex; flex-wrap: wrap; gap: .6rem; margin-top: 2rem; }
+.about-tags li {
+  padding: .45rem .9rem; border-radius: 2px; border: 1px solid var(--border-silver); background: var(--surface);
+  font-size: .82rem; font-weight: 600;
+}
+
+@media (min-width: 768px) {
+  .values { grid-template-columns: repeat(3, 1fr); }
+  .about-split { grid-template-columns: 1fr 1fr; gap: 4rem; }
+  .about-photo { aspect-ratio: 4 / 5; }
+}
+
+@media (min-width: 1024px) {
+  .about-split { gap: 6rem; }
+}

@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Menu · RESTAURANT LE CAVIAR</title>
+  <meta name="description" content="Menu de RESTAURANT LE CAVIAR à Abomey-Calavi : grillades et steaks premium, pizzas au feu de bois, entrées, desserts artisanaux et cocktails signatures. Commande en ligne via WhatsApp.">
+  <meta name="theme-color" content="#12161A">
+  <meta property="og:title" content="RESTAURANT LE CAVIAR — Une expérience culinaire d'exception à Abomey-Calavi.">
+  <meta property="og:description" content="Steaks premium, grillades, pizzas au feu de bois et cocktails signatures. Salle VIP &amp; Rooftop. Commandez sur WhatsApp.">
+  <meta property="og:type" content="restaurant">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <a class="skip" href="#main">Aller au contenu</a>
+
+  <!-- ============ HEADER ============ -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="index.html" class="brand" aria-label="RESTAURANT LE CAVIAR, accueil">
+        <span class="brand__mark" aria-hidden="true">C</span>
+        <span class="brand__text">Le Caviar<small>Restaurant</small></span>
+      </a>
+
+      <nav class="nav" id="nav" aria-label="Navigation principale">
+        <ul class="nav__list">
+          <li><a href="a-propos.html" class="nav__link">À propos</a></li>
+          <li><a href="index.html#espaces" class="nav__link">Nos espaces</a></li>
+          <li><a href="menu.html" class="nav__link is-active" aria-current="page">Menu</a></li>
+          <li><a href="index.html#specialites" class="nav__link">Spécialités</a></li>
+          <li><a href="reservation.html" class="nav__link">Réservation</a></li>
+          <li><a href="index.html#contact" class="nav__link">Contact</a></li>
+        </ul>
+        <a href="reservation.html" class="btn btn--accent nav__cta js-reserve">Réserver une table</a>
+      </nav>
+
+      <a href="commander.html" class="cart-icon cart-btn" aria-label="Mon panier">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 7h12l-1 13H7L6 7Z"/><path d="M9 7V6a3 3 0 0 1 6 0v1"/></svg>
+        <span class="cart-badge" hidden>0</span>
+      </a>
+
+      <button class="burger" id="burger" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="nav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main" class="page-carte">
+    <!-- ============ EN-TÊTE DE PAGE ============ -->
+    <section class="page-hero">
+      <div class="container">
+        <a href="index.html" class="back">← Retour à l'accueil</a>
+        <p class="eyebrow">La Carte</p>
+        <h1 class="page-hero__title">Menu Le Caviar</h1>
+        <p class="page-hero__lead">Grillades &amp; steaks premium, pizzas au feu de bois, entrées de standing, desserts artisanaux et cocktails signatures. Ajoutez vos plats au panier : le total se calcule en direct.</p>
+      </div>
+    </section>
+
+    <!-- ============ BLOC PREMIUM ============ -->
+    <div class="container">
+      <aside class="hebdo reveal" aria-label="Salle VIP et Rooftop">
+        <span class="hebdo__badge">★ Salle VIP &amp; Rooftop</span>
+        <div class="hebdo__body">
+          <h2 class="hebdo__title">Dînez au sommet</h2>
+          <p>Toute la carte est servie en salle VIP et sur le Rooftop, <strong>7j/7 de 11h00 à 01h00</strong>.</p>
+        </div>
+        <div class="hebdo__actions">
+          <a href="reservation.html" class="btn btn--dark">Réserver une table</a>
+          <a href="https://wa.me/2290100000000" class="hebdo__link js-whatsapp" data-message="Bonjour RESTAURANT LE CAVIAR 👋, quelles sont les suggestions du chef aujourd'hui ? Merci !" target="_blank" rel="noopener">Suggestions du chef →</a>
+        </div>
+      </aside>
+    </div>
+
+    <!-- ============ CATÉGORIES ============ -->
+    <nav class="cat-nav" aria-label="Catégories du menu">
+      <div class="container">
+        <ul class="cat-nav__list">
+          <li><a href="#grillades-steaks" class="cat-nav__link">🥩 Grillades &amp; Steaks</a></li>
+          <li><a href="#pizzas" class="cat-nav__link">🍕 Pizzas</a></li>
+          <li><a href="#entrees" class="cat-nav__link">🥗 Entrées</a></li>
+          <li><a href="#desserts" class="cat-nav__link">🍧 Desserts</a></li>
+          <li><a href="#cocktails" class="cat-nav__link">🍹 Cocktails</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container carte">
+      <section class="carte__cat reveal" id="grillades-steaks">
+        <header class="carte__head">
+          <span class="carte__ico" aria-hidden="true">🥩</span>
+          <h2>Sélection Grillades &amp; Steaks Premium</h2>
+          <p class="carte__note">La Spécialité</p>
+        </header>
+        <ul class="carte__list">
+          <li class="item">
+            <div class="item__top"><h3>Le T-Bone Steak du Chef <span class="badge">Chef</span></h3><span class="item__dots" aria-hidden="true"></span><span class="item__price">6 500 FCFA</span></div>
+            <p>Pièce de bœuf d'exception saisie à la perfection, servie avec des frites de pommes de terre croustillantes et une sauce au poivre vert.</p>
+            <button type="button" class="add-btn" data-add data-id="le-t-bone-steak-du-chef" data-categorie="Grillade & steak premium" data-nom="Le T-Bone Steak du Chef" data-prix="6500" data-image="🥩" aria-label="Ajouter Le T-Bone Steak du Chef au panier"><span aria-hidden="true">+</span> Ajouter au panier</button>
+          </li>
+          <li class="item">
+            <div class="item__top"><h3>Filet de Bœuf sauce Champignons</h3><span class="item__dots" aria-hidden="true"></span><span class="item__price">5 500 FCFA</span></div>
+            <p>Pavé de viande ultra-tendre, nappé d'une crème aux cèpes frais.</p>
+            <button type="button" class="add-btn" data-add data-id="filet-de-boeuf-sauce-champignons" data-categorie="Grillade & steak premium" data-nom="Filet de Bœuf sauce Champignons" data-prix="5500" data-image="🥩" aria-label="Ajouter Filet de Bœuf sauce Champignons au panier"><span aria-hidden="true">+</span> Ajouter au panier</button>
+          </li>
+          <li class="item">
+            <div class="item__top"><h3>Choukouya de Bœuf ou de Mouton VIP</h3><span class="item__dots" aria-hidden="true"></span><span class="item__price">4 000 FCFA</span></div>
+            <p>Viande marinée aux épices du Nord, braisée à la perfection et servie avec des oignons croquants.</p>
+            <button type="button" class="add-btn" data-add data-id="choukouya-de-boeuf-ou-de-mouton-vip" data-categorie="Grillade & steak premium" data-nom="Choukouya de Bœuf ou de Mouton VIP" data-prix="4000" data-image="🍢" aria-label="Ajouter Choukouya de Bœuf ou de Mouton VIP au panier"><span aria-hidden="true">+</span> Ajouter au panier</button>
+          </li>
+          <li class="item">
+            <div class="item__top"><h3>Poulet Mayo ou Poulet Braisé entier</h3><span class="item__dots" aria-hidden="true"></span><span class="item__price">5 000 FCFA</span></div>
+            <p>Accompagné d'alloco ou de frites.</p>
+            <button type="button" class="add-btn" data-add data-id="poulet-mayo-ou-poulet-braise-entier" data-categorie="Grillade & steak premium" data-nom="Poulet Mayo ou Poulet Braisé entier" data-prix="5000" data-image="🍗" aria-label="Ajouter Poulet Mayo ou Poulet Braisé entier au panier"><span aria-hidden="true">+</span> Ajouter au panier</button>
+          </li>
+        </ul>
+      </section>
+      <section class="carte__cat reveal" id="pizzas">
+        <header class="carte__head">
+          <span class="carte__ico" aria-hidden="true">🍕</span>
+          <h2>Pizzas Premium au Feu de Bois</h2>
+          <p class="carte__note">Four à bois</p>
+        </header>
+        <ul class="carte__list">
+          <li class="item">
+            <div class="item__top"><h3>Pizza Le Caviar (L'Exclusive) <span class="badge">Exclusif</span></h3><span class="item__dots" aria-hidden="true"></span><span class="item__price">6 000 FCFA</span></div>
+            <p>Base crème fraîche, mozzarella, émincé de bœuf mariné, oignons caramélisés et filet d'huile truffée.</p>
+            <button type="button" class="add-btn" data-add data-id="pizza-le-caviar-l-exclusive" data-categorie="Pizza premium au feu de bois" data-nom="Pizza Le Caviar (L'Exclusive)" data-prix="6000" data-image="🍕" aria-label="Ajouter Pizza Le Caviar (L'Exclusive) au panier"><span aria-hidden="true">+</span> Ajouter au panier</button>
+          </li>
+          <li class="item">
+            <div class="item__top"><h3>Pizza Quatre Fromages Chic</h3><span class="item__dots" aria-hidden="true"></span><span class="item__price">5 000 FCFA</span></div>
+            <p>Mozzarella, bleu, emmental, parmesan.</p>
+            <button type="button" class="add-btn" data-add data-id="pizza-quatre-fromages-chic" data-categorie="Pizza premium au feu de bois" data-nom="Pizza Quatre Fromages Chic" data-prix="5000" data-image="🍕" aria-label="Ajouter Pizza Quatre Fromages Chic au panier"><span aria-hidden="true">+</span> Ajouter au panier</button>
+          </li>
+          <li class="item">
+            <div class="item__top"><h3>Pizza Reine Classique</h3><span class="item__dots" aria-hidden="true"></span><span class="item__price">4 500 FCFA</span></div>
+            <p>Sauce tomate maison, mozzarella, jambon supérieur, champignons frais.</p>
+            <button type="button" class="add-btn" data-add data-id="pizza-reine-classique" data-categorie="Pizza premium au feu de bois" data-nom="Pizza Reine Classique" data-prix="4500" data-image="🍕" aria-label="Ajouter Pizza Reine Classique au panier"><span aria-hidden="true">+</span> Ajouter au panier</button>
+          </li>
+        </ul>
+      </section>
+      <section class="carte__cat reveal" id="entrees">
+        <header class="carte__head">
+          <span class="carte__ico" aria-hidden="true">🥗</span>
+          <h2>Entrées &amp; Petits Plats de Standing</h2>
+          
+        </header>
+        <ul class="carte__list">
+          <li class="item">
+            <div class="item__top"><h3>Salade Gourmande le Caviar</h3><span class="item__dots" aria-hidden="true"></span><span class="item__price">3 000 FCFA</span></div>
+            <p>Mix de crudités, gésiers confits, avocat et vinaigrette balsamique.</p>
+            <button type="button" class="add-btn" data-add data-id="salade-gourmande-le-caviar" data-categorie="Entrée & petit plat" data-nom="Salade Gourmande le Caviar" data-prix="3000" data-image="🥗" aria-label="Ajouter Salade Gourmande le Caviar au panier"><span aria-hidden="true">+</span> Ajouter au panier</button>
+          </li>
+          <li class="item">
+            <div class="item__top"><h3>Assiette de Calamars Frits</h3><span class="item__dots" aria-hidden="true"></span><span class="item__price">3 500 FCFA</span></div>
+            <p>Beignets de calamars croustillants servis avec une sauce tartare maison.</p>
+            <button type="button" class="add-btn" data-add data-id="assiette-de-calamars-frits" data-categorie="Entrée & petit plat" data-nom="Assiette de Calamars Frits" data-prix="3500" data-image="🦑" aria-label="Ajouter Assiette de Calamars Frits au panier"><span aria-hidden="true">+</span> Ajouter au panier</button>
+          </li>
+        </ul>
+      </section>
+      <section class="carte__cat reveal" id="desserts">
+        <header class="carte__head">
+          <span class="carte__ico" aria-hidden="true">🍧</span>
+          <h2>Desserts Artisanaux</h2>
+          <p class="carte__note">Fait maison</p>
+        </header>
+        <ul class="carte__list">
+          <li class="item">
+            <div class="item__top"><h3>Le Secret Fondant</h3><span class="item__dots" aria-hidden="true"></span><span class="item__price">2 500 FCFA</span></div>
+            <p>Gâteau au chocolat cœur coulant, escorté d'une boule de glace vanille artisanale.</p>
+            <button type="button" class="add-btn" data-add data-id="le-secret-fondant" data-categorie="Dessert artisanal" data-nom="Le Secret Fondant" data-prix="2500" data-image="🍫" aria-label="Ajouter Le Secret Fondant au panier"><span aria-hidden="true">+</span> Ajouter au panier</button>
+          </li>
+          <li class="item">
+            <div class="item__top"><h3>Coupe Caviar Glacée</h3><span class="item__dots" aria-hidden="true"></span><span class="item__price">2 000 FCFA</span></div>
+            <p>Assortiment de 3 boules au choix avec coulis et chantilly à l'espace glacier.</p>
+            <button type="button" class="add-btn" data-add data-id="coupe-caviar-glacee" data-categorie="Dessert artisanal" data-nom="Coupe Caviar Glacée" data-prix="2000" data-image="🍨" aria-label="Ajouter Coupe Caviar Glacée au panier"><span aria-hidden="true">+</span> Ajouter au panier</button>
+          </li>
+        </ul>
+      </section>
+      <section class="carte__cat reveal" id="cocktails">
+        <header class="carte__head">
+          <span class="carte__ico" aria-hidden="true">🍹</span>
+          <h2>Cocktails Signatures &amp; Refresh</h2>
+          <p class="carte__note">Rooftop &amp; Bar</p>
+        </header>
+        <ul class="carte__list">
+          <li class="item">
+            <div class="item__top"><h3>Cocktail Le Caviar</h3><span class="item__dots" aria-hidden="true"></span><span class="item__price">3 000 FCFA</span></div>
+            <p>Création exclusive de la maison à base de fruits exotiques de saison.</p>
+            <button type="button" class="add-btn" data-add data-id="cocktail-le-caviar" data-categorie="Cocktail & refresh" data-nom="Cocktail Le Caviar" data-prix="3000" data-image="🍸" aria-label="Ajouter Cocktail Le Caviar au panier"><span aria-hidden="true">+</span> Ajouter au panier</button>
+          </li>
+          <li class="item">
+            <div class="item__top"><h3>Jus de fruits frais pressés minute</h3><span class="item__dots" aria-hidden="true"></span><span class="item__price">1 500 FCFA</span></div>
+            
+            <button type="button" class="add-btn" data-add data-id="jus-de-fruits-frais-presses-minute" data-categorie="Cocktail & refresh" data-nom="Jus de fruits frais pressés minute" data-prix="1500" data-image="🍹" aria-label="Ajouter Jus de fruits frais pressés minute au panier"><span aria-hidden="true">+</span> Ajouter au panier</button>
+          </li>
+          <li class="item">
+            <div class="item__top"><h3>Sélection de Bières de prestige et Vins fins</h3><span class="item__dots" aria-hidden="true"></span><span class="item__price"><small>dès</small> 2 000 FCFA</span></div>
+            <p>À la carte : le choix et le prix final vous sont confirmés sur WhatsApp.</p>
+            <button type="button" class="add-btn" data-add data-id="selection-de-bieres-de-prestige-et-vins-fins" data-categorie="Cocktail & refresh" data-nom="Sélection de Bières de prestige et Vins fins" data-prix="2000" data-image="🍷" data-variable="1" aria-label="Ajouter Sélection de Bières de prestige et Vins fins au panier"><span aria-hidden="true">+</span> Ajouter au panier</button>
+          </li>
+        </ul>
+      </section>
+    </div>
+
+    <!-- ============ APPEL À L'ACTION ============ -->
+    <section class="carte-cta">
+      <div class="container carte-cta__inner reveal">
+        <p class="carte-cta__slogan">« Une expérience culinaire d'exception à Abomey-Calavi. »</p>
+        <a href="commander.html" class="btn btn--accent btn--lg">Voir mon panier</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container footer__inner footer__inner--about">
+      <div>
+        <a href="index.html" class="brand brand--footer"><span class="brand__mark" aria-hidden="true">C</span><span class="brand__text">Le Caviar<small>Restaurant</small></span></a>
+        <p class="footer__slogan">Une expérience culinaire d'exception à Abomey-Calavi.</p>
+      </div>
+      <div class="footer__col">
+        <h2 class="footer__heading">Horaires</h2>
+        <ul class="footer__info">
+          <li>Ouvert 7j/7</li>
+          <li>De 11h00 à 01h00 du matin</li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h2 class="footer__heading">Contact</h2>
+        <address class="footer__info">
+          <span>Rue derrière l'Hôpital International de Calavi (CHIC), rue de la Pharmacie Zoca, Abomey-Calavi, Bénin</span>
+          <span>WhatsApp : <a href="tel:+2290100000000">+229 01 00 00 00 00</a></span>
+        </address>
+      </div>
+    </div>
+    <p class="footer__copy container">© <span id="year">2026</span> RESTAURANT LE CAVIAR · Abomey-Calavi, Bénin</p>
+  </footer>
+
+  <script src="assets/js/main.js" defer></script>
+  <script src="assets/js/cart.js" defer></script>
+</body>
+</html>
